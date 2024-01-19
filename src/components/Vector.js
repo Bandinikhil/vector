@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Vector = () => {
   return (
@@ -13,7 +13,9 @@ const Vector = () => {
           <div className="bg-gray-300 text-gray-600 px-3 py-1 rounded">
             Work Space
           </div>
-          <div className="bg-gray-300 text-gray-600 px-3 py-1 rounded">Garage</div>
+          <div className="bg-gray-300 text-gray-600 px-3 py-1 rounded">
+            Garage
+          </div>
           <div className="bg-gray-300 text-gray-600 px-3 py-1 rounded">
             Settings
           </div>
