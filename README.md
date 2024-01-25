@@ -1,7 +1,14 @@
-# Getting Started with Create React App
+# Vector Dashboard with React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Screenshots
+<br/>
+![Screenshot (272)](https://github.com/Bandinikhil/vector/assets/105233916/3aa61878-db39-4da6-86dc-1f1cf5fdc2f5)
 
+<br/>
+
+![Screenshot (273)](https://github.com/Bandinikhil/vector/assets/105233916/38ddef50-feb7-4357-89ec-700260538ac0)
+
+<br/>
 ## Available Scripts
 
 In the project directory, you can run:
