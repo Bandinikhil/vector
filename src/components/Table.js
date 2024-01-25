@@ -3,8 +3,8 @@ import React from "react";
 const Table = () => {
   return (
     <>
-      <div className="relative top-[8rem] left-[17rem] overflow-x-auto shadow-md sm:rounded-lg">
-        <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <div className="md:relative  top-[8rem] left-[13rem] overflow-x-auto shadow-md sm:rounded-lg">
+        <table className="w-[70%] text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
               <th scope="col" className="p-4">

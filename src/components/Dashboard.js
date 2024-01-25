@@ -7,7 +7,7 @@ const Dashboard = () => {
     <>
       <div className="flex flex-col">
         <Header />
-        <div className="flex">
+        <div className="flex w-screen">
           <Sidebar />
         </div>
       </div>

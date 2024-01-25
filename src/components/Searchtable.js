@@ -12,21 +12,31 @@ const Searchtable = () => {
     "Analytics"
   ];
 
+  const scrollIntems = [
+    "Revisite (2025)",
+    "Vetting (135)",
+    "Review Prcing (1441)",
+    "Waiting on Response (131)",
+    "Bid Request (10)",
+    "Rejected (1147)",
+    "Vendor Contract (15)"
+  ];
+
   const handleNavItemClick = (index) => {
     setActiveNavItem(index);
   };
 
   return (
     <>
-      <div className="relative top-[4rem] left-[17rem]  sm:rounded-lg">
-        <nav className="bg-white mx-7 h-[55%] w-full flex items-center hover:text-black space-x-4">
+      <div className="md:relative top-[4rem] left-[13rem] mt-3  sm:rounded-lg ">
+        <nav className="bg-white overflow-x-auto md:h-[55%] h-[30%] w-full flex items-center hover:text-black space-x-4">
           {navItems.map((item, index) => (
             <a
               key={index}
               href="#"
               className={`text-[#B2B2B2] ${
                 activeNavItem === index ? "underline-offset-4" : ""
-              } hover:text-black `}
+              } hover:text-black whitespace-nowrap flex-shrink-0`}
               onMouseEnter={() => setActiveNavItem(index)}
               onMouseLeave={() => setActiveNavItem(null)}
               onClick={() => handleNavItemClick(index)}
@@ -35,7 +45,7 @@ const Searchtable = () => {
             </a>
           ))}
 
-          <button className="flex items-center gap-2 bg-[#00A89E] p-3 rounded-xl text-white">
+          <button className="flex whitespace-nowrap items-center gap-2 bg-[#00A89E] p-3 rounded-xl text-white">
             Fliter
             <span>
               <svg
@@ -57,15 +67,15 @@ const Searchtable = () => {
           </button>
         </nav>
 
-        <div className="flex items-center justify-between  flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
+        <div className="flex items-center justify-between overflow-x-auto  flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
           <div>
             <button
               id="dropdownActionButton"
               data-dropdown-toggle="dropdownAction"
-              className="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+              className="inline-flex items-center  whitespace-nowrap text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
               type="button"
             >
-              <span className="sr-only">Action button</span>
+              <span className="sr-only whitespace-nowrap">Action button</span>
               Action
               <svg
                 className="w-2.5 h-2.5 ms-2.5"
@@ -84,20 +94,20 @@ const Searchtable = () => {
               </svg>
             </button>
           </div>
-          <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
-            <label class="relative inline-flex items-center w-full cursor-pointer">
-              <input type="checkbox" value="" class="sr-only peer" />
-              <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-blue-600"></div>
-              <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">
+          <div className="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+            <label className="relative inline-flex items-center w-full cursor-pointer">
+              <input type="checkbox" value="" className="sr-only peer" />
+              <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-blue-600"></div>
+              <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">
                 Enable notifications
               </span>
             </label>
           </div>
-          <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
-            <label class="relative inline-flex items-center w-full cursor-pointer">
-              <input type="checkbox" value="" class="sr-only peer" />
-              <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-blue-600"></div>
-              <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">
+          <div className="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+            <label className="relative inline-flex items-center w-full cursor-pointer">
+              <input type="checkbox" value="" className="sr-only peer" />
+              <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:translate-x-[-100%] peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-500 peer-checked:bg-blue-600"></div>
+              <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">
                 Enable notifications
               </span>
             </label>
@@ -191,51 +201,19 @@ const Searchtable = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-between  ">
+        <div className="flex flex-wrap gap-2 items-center overflow-x-auto justify-between  ">
           {/* Add your buttons here */}
-          <button
-            className="buttonStyle text-black bg-gray-200 rounded-lg"
+          {scrollIntems.map((item,index)=>(
+            <button
+            key={index}
+            className="buttonStyle whitespace-nowrap text-black bg-gray-200 rounded-lg"
             onClick={() => {}}
           >
-            Revisit (2025)
+            {item}
           </button>
-          <button
-            className="buttonStyle text-black bg-gray-200 rounded-lg"
-            onClick={() => {}}
-          >
-            Vetting (133)
-          </button>
-          <button
-            className="buttonStyle text-black bg-gray-200 rounded-lg"
-            onClick={() => {}}
-          >
-            Review Pricing (1441)
-          </button>
-          <button
-            className="buttonStyle text-black bg-gray-200 rounded-lg"
-            onClick={() => {}}
-          >
-            Waiting on Response(133)
-          </button>
-          <button
-            className="buttonStyle text-black bg-gray-200 rounded-lg"
-            onClick={() => {}}
-          >
-            Bid Requested(10)
-          </button>
-
-          <button
-            className="buttonStyle text-black bg-gray-200 rounded-lg"
-            onClick={() => {}}
-          >
-            Rejected (1147)
-          </button>
-          <button
-            className="buttonStyle text-black bg-gray-200 rounded-lg"
-            onClick={() => {}}
-          >
-            Vendor Contract(15)
-          </button>
+          ))}
+          
+          
         </div>
       </div>
     </>
