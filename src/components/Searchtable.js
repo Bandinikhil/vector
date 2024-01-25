@@ -67,7 +67,7 @@ const Searchtable = () => {
           </button>
         </nav>
 
-        <div className="flex items-center justify-between overflow-x-auto  flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
+        <div className="flex items-center w-[85%] justify-between flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
           <div>
             <button
               id="dropdownActionButton"
@@ -152,10 +152,10 @@ const Searchtable = () => {
           <label for="table-search" className="sr-only">
             Search
           </label>
-          <div className="relative">
-            <div className="absolute inset-y-0 mx-auto text-center bg-[#00A89E] rounded-lg w-10 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
+          <div className="relative rounded-full">
+            <div className="absolute inset-y-0 m-auto text-center bg-[#00A89E] rounded-l-full w-10 rtl:inset-r-0 start-0 flex items-center p-1 pointer-events-none">
               <svg
-                className="w-4 h-4 text-white mx-auto text-center dark:text-gray-400"
+                className="w-4 h-4 text-white m-auto rounded-l-full  text-center dark:text-gray-400"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -173,7 +173,7 @@ const Searchtable = () => {
             <input
               type="text"
               id="table-search-users"
-              className="block p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-72 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="block p-2 ps-10 text-sm rounded-full text-gray-900 border border-gray-300  w-72 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Search for users"
             />
           </div>
@@ -201,19 +201,17 @@ const Searchtable = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-2 items-center overflow-x-auto justify-between  ">
+        <div className="flex w-[85%] flex-wrap gap-2  items-center overflow-x-auto justify-between  ">
           {/* Add your buttons here */}
-          {scrollIntems.map((item,index)=>(
+          {scrollIntems.map((item, index) => (
             <button
-            key={index}
-            className="buttonStyle whitespace-nowrap text-black bg-gray-200 rounded-lg"
-            onClick={() => {}}
-          >
-            {item}
-          </button>
+              key={index}
+              className="buttonStyle whitespace-nowrap text-black bg-gray-200 rounded-lg"
+              onClick={() => {}}
+            >
+              {item}
+            </button>
           ))}
-          
-          
         </div>
       </div>
     </>

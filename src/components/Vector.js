@@ -2,7 +2,7 @@ import React from "react";
 
 const Vector = () => {
   return (
-    <div className="bg-gray-100 h-screen">
+    <div className="bg-gray-100 overflow-x-auto h-screen">
       <div className="flex items-center justify-between p-4 border-b border-gray-300">
         <div className="text-2xl font-bold">Vector 97</div>
         <div className="flex items-center space-x-4">
