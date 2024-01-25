@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <>
       <header className="fixed z-50 top-0 left-0 w-full bg-white md:p-4 p-1 border-b-2 border-[#B2B2B2] ">
-        <div className="flex flex-col md:flex-row items-center justify-start gap-1 md:items-center overflow-x-scroll md:justify-start md:gap-x-40">
+        <div className="flex flex-col md:flex-row items-center justify-start gap-1 md:items-center overflow-x-scroll md:justify-start md:gap-x-[5rem]">
           <div className=" flex items-center justify-between w-auto space-x-2">
             <div className="md:w-24 w-16 mt-2 ">
               <img
